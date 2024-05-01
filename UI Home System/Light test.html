@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.5">
+    <title>Lighting Control</title>
+    <link rel="stylesheet" href="CSS/Room Control.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Room Settings</h1>
+        <div class="room-control">
+            <h2>The Living Room</h2>
+            <label for="livingRoomLight">Light Level</label>
+            <input type="range" min="0" max="100" value="50" class="dimmer" id="livingRoomLight" oninput="updateLightDisplay('livingRoomLightDisplay', this.value)" onchange="fixLightDisplay('livingRoomLightDisplay', this.value)">
+            <span id="livingRoomLightDisplay" class="light-display">50</span>
+            <label for="livingRoomTemp">Temperature Level</label>
+            <input type="range" min="1" max="50" value="22" class="temperature" id="livingRoomTemp" oninput="updateTempDisplay('livingRoomTempDisplay', this.value)" onchange="fixTempDisplay('livingRoomTempDisplay', this.value)">
+            <span id="livingRoomTempDisplay" class="temp-display">22</span>°C
+
+            <h2>Kitchen</h2>
+            <label for="kitchenLight">Light Level</label>
+            <input type="range" min="0" max="100" value="50" class="dimmer" id="kitchenLight" oninput="updateLightDisplay('kitchenLightDisplay', this.value)" onchange="fixLightDisplay('kitchenLightDisplay', this.value)">
+            <span id="kitchenLightDisplay" class="light-display">50</span>
+            <label for="kitchenTemp">Temperature Level</label>
+            <input type="range" min="1" max="50" value="28" class="temperature" id="kitchenTemp" oninput="updateTempDisplay('kitchenTempDisplay', this.value)" onchange="fixTempDisplay('kitchenTempDisplay', this.value)">
+            <span id="kitchenTempDisplay" class="temp-display">28</span>°C
+
+            <h2>Parents Bedroom</h2>
+            <label for="parentRoomLight">Light Level</label>
+            <input type="range" min="0" max="100" value="50" class="dimmer" id="parentRoomLight" oninput="updateLightDisplay('parentRoomLightDisplay', this.value)" onchange="fixLightDisplay('parentRoomLightDisplay', this.value)">
+            <span id="parentRoomLightDisplay" class="light-display">50</span>
+            <label for="parentRoomTemp">Temperature Level</label>
+            <input type="range" min="1" max="50" value="18" class="temperature" id="parentRoomTemp" oninput="updateTempDisplay('parentRoomTempDisplay', this.value)" onchange="fixTempDisplay('parentRoomTempDisplay', this.value)">
+            <span id="parentRoomTempDisplay" class="temp-display">18</span>°C
+        </div>
+        
+    </div>
+</div>
+        </div>
+        <div class="home-button-container">
+            <a href="Home.html" class="home-button">Home Page</a>
+        </div>
+    <script src="JS/Room Control.js"></script>
+</body>
+</html>

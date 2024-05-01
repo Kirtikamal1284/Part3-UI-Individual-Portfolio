@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.5">
+    <title>Smart Home Devices</title>
+    <link rel="stylesheet" href="CSS/Smartdev.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Smart Home Devices</h1>
+
+        <div class="device">
+            <h2>Fridge</h2>
+            <label for="fridgeTemp">Temperature: <span id="fridgeTempDisplay">4</span>°C</label>
+            <input type="range" min="0" max="10" value="3" class="dimmer" id="fridgeTemp" oninput="updateFridgeTempDisplay(this.value)"
+            oninput="updateDisplay('fridgeTempDisplay', this.value, true)"
+            onchange="updateDisplay('fridgeTempDisplay', this.value, false)">
+            <label for= "Fridge"> Turn On/Off </label>
+            <label class="switch">
+                <input type="checkbox" id="fridgePower" onchange="toggleDevice(this)">
+                <span class="slider round"></span>
+            </label>
+        </div>
+
+        <div class="device">
+            <h2>SmartTV</h2>
+            <label for= "smartTv"> Turn On/Off </label>
+            <label class="switch">
+                <input type="checkbox" onchange="toggleDevice('SmartTV')">
+                <span class="slider round"></span>
+            </label>
+        </div>
+
+        <div class="device">
+            <h2>Bluetooth Speakers</h2>
+            <label for="speakerVolume">Volume: <span id="speakerVolumeDisplay" class="display-value">30</span></label>
+            <input type="range" min="0" max="100" value="30" class="dimmer" id="speakerVolume"
+            oninput="updateDisplay('speakerVolumeDisplay', this.value, true)"
+            onchange="updateDisplay('speakerVolumeDisplay', this.value, false)">
+            <label for= "BluetoothSpeaker"> Turn On/Off </label>
+            <label class="switch">
+            <input type="checkbox" id="speakerPower" onchange="toggleDevice('speakers')">
+                <span class="slider round"></span>
+            </label>
+        </div>
+
+        <div class="device">
+            <h2>Kettle</h2>
+            <label for= "Kettle"> Turn On/Off </label>
+            <label class="switch">
+                <input type="checkbox" onchange="toggleDevice('kettle')">
+                <span class="slider round"></span>
+            </label>
+        </div>
+
+        <div class="device">
+            <h2>Kitchen Fan</h2>
+            <select id="fanSpeed" onchange="changeFanSpeed(this.value)">
+                <option value="0">Off</option>
+                <option value="1">Speed 1</option>
+                <option value="2">Speed 2</option>
+                <option value="3">Speed 3</option>
+            </select>
+        </div>
+
+    </div>
+</div>
+        <div class="home-button-container">
+            <a href="Home.html" class="home-button">Home Page</a>
+        </div>
+    <script src="JS/Smartdev.js"></script>
+</body>
+</html>
