@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.16.2/xlsx.full.min.js"></script>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.5">
+    <title>Utility Data</title>
+    <link rel="stylesheet" href="CSS/USP.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Utilities Data</h1>
+        <input type="file" id="upload" accept=".xlsx, .xls" onchange="readExcelFile(event)">
+        <table id="data-table">
+            <thead>
+                <tr>
+                    <th>Month</th>
+                    <th>Electric Bill (£)</th>
+                    <th>Gas Bill (£)</th>
+                    <th>Water Bill (£)</th>
+                    <th>Solar Power Generation</th>
+                    <th>Solar Power Profit (£)</th>
+                </tr>
+            </thead>
+        <tbody>
+        </tbody>
+        </table>
+    </div>
+    <div class="home-button-container">
+        <a href="Home.html" class="home-button">Home Page</a>
+    </div>
+    
+    <script src="JS/USP.js"></script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0px; /* Updated padding to ensure the background covers the full page */
+    background-color: #c9ebcc;
+    background-image: url('Images/Background1.png'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+}
+
+.container {
+    width: 100%; /* Changed to take the full width */
+    height: 100vh; /* Ensures the container takes at least the height of the viewport */
+    display: flex; /* Using flex to align items */
+    flex-direction: column; /* Stack vertically */
+    align-items: center; /* Center align horizontally */
+    justify-content: center; /* Center align vertically */
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.links {
+    display: flex;
+    justify-content: center; /* Center the links horizontally */
+    flex-wrap: wrap; /* CAllows the links to wrap if needed */
+    gap: 20px; /* Adds space between the links */
+}
+
+.link-button {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.link-button:hover {
+    background-color: #0056b3;
+}
